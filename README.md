@@ -27,7 +27,7 @@ particularly for those unfamiliar with more complex banking software.
 As financial literacy becomes increasingly important, FinGuard will aim to provide
 an accessible platform for users to manage their money efficiently, without
 needing an in-depth understanding of complex financial tools.
-General Functionality:
+##General Functionality:
 User Authentication: Secure login and account management for
 individuals and small business users.
 Transaction Management: Users can add, edit, or delete financial
