@@ -1,3 +1,4 @@
+/* Reset some basic styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,108 +6,253 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
     color: #333;
+    line-height: 1.6;
+    margin: 0;
 }
 
+/* Container */
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 15px;
 }
 
-/* Header Styling */
-header {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 20px 0;
+.regcontainer {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 50px;
     text-align: center;
+}
+.regcontainer h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #283E4A;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #283E4A;
+    text-align: left;
+}
+
+form input, form select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #f0c674;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(240, 198, 116, 0.5);
+}
+
+/* Submit button */
+form input[type="submit"] {
+    background-color: #f0c674;
+    color: #333;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #d4a857;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+/* Success message styling */
+.success {
+    color: green;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    form input, form select {
+        padding: 8px;
+    }
+
+    form input[type="submit"] {
+        padding: 10px;
+    }
+}
+/* Header styles */
+header {
+    background-color: #283E4A;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 2.8em;
+}
+
+header nav {
+    text-align: center;
+    margin-top: 10px;
 }
 
 header nav ul {
     list-style: none;
-    padding: 0;
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
-/* Hero Section */
+header nav ul li a:hover {
+    color: #f0c674;
+}
+
+/* Hero section */
 .hero {
-    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
+    text-align: center;
+    padding: 100px 0;
 }
 
 .hero h2 {
-    font-size: 3rem;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
 .hero .btn {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+    background-color: #f0c674;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .hero .btn:hover {
-    background-color: #45a049;
+    background-color: #d4a857;
 }
 
-/* Features Section */
+/* Features section */
 .features {
     background-color: #fff;
-    padding: 40px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
 .features .feature {
-    margin-bottom: 20px;
+    display: inline-block;
+    width: 25%;
+    margin: 0 2.5%;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.features .feature:hover {
+    transform: translateY(-10px);
 }
 
 .features h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #283E4A;
 }
 
 .features p {
-    color: #666;
+    font-size: 1.1em;
+    color: #555;
 }
 
-/* Footer */
+/* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #283E4A;
     color: #fff;
-    text-align: center;
     padding: 20px 0;
+    text-align: center;
 }
 
 footer p {
     margin: 0;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .features .feature {
+        width: 45%;
+        margin: 2.5%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+    }
+
+    .features .feature {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .hero .btn {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
 }
