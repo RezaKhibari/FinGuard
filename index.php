@@ -27,6 +27,7 @@
             <h2>Manage Your Finances with Ease</h2>
             <p>Plan your budget, set goals, track expenses, and get insights on your financial health.</p>
             <a href="register.php" class="btn">Get Started</a>
+            <a href="login.php" class="btn">Login</a>
         </div>
     </section>
 

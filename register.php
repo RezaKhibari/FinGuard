@@ -23,6 +23,8 @@
             </select><br><br>
 
             <input type="submit" value="Register">
+            <a href="login.php" class="btn">Login</a>
+            <a href="index.php" class="btn">Home</a>
         </form>
     </div>
 </body>
