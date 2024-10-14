@@ -6,21 +6,21 @@
     <title>User Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="register-page">
     <div class="regcontainer">
         <h2>Register</h2>
         <form action="register.php" method="POST">
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
 
-            <label for="account_type">Account Type:</label><br>
+            <label for="account_type">Account Type:</label>
             <select id="account_type" name="account_type" required>
                 <option value="individual">Individual</option>
                 <option value="business">Business</option>
-            </select><br><br>
+            </select><br>
 
             <input type="submit" value="Register">
             <a href="login.php" class="btn">Login</a>
