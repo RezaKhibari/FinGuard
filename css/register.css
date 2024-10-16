@@ -1,0 +1,106 @@
+
+/* Register section */
+body.register-page {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Registration container styling */
+.regcontainer {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Title styling */
+.regcontainer h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Form label styling */
+.regcontainer label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+.regcontainer input[type="email"], input[type="password"], select {
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+.regcontainer input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.regcontainer input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Additional buttons (Login, Home) */
+.regcontainer a.btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.regcontainer a.btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive behavior */
+@media (max-width: 500px) {
+    .regcontainer {
+        padding: 20px;
+        max-width: 90%;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="email"], input[type="password"], select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    input[type="submit"], a.btn {
+        padding: 10px;
+    }
+}
