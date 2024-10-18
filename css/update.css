@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Input Fields Styling */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input Focus Styling */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+input[type="submit"]:hover {
+    background-color: #5750d8;
+}
+
+/* Delete Button Styling */
+input[name="delete"] {
+    background-color: red;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Delete Button Hover Effect */
+input[name="delete"]:hover {
+    background-color: darkred;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

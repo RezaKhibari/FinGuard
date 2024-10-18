@@ -12,9 +12,10 @@
             <h1>Welcome to Financial Manager</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="login.php">Login</a></li>
                     <li><a href="register.php">Register</a></li>
+                    <li><a href="account.php">My Account</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
